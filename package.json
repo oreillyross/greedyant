@@ -1,0 +1,13 @@
+{
+  "name": "greedyant",
+  "version": "1.0.0",
+  "description": "A demo project to show off my React, GraphQL, PostgresSQL, CSS3, HTML5 skills. ",
+  "keywords": [
+    "html5",
+    "css3",
+    "reactjs",
+    "graphql"
+  ],
+  "main": "/index.html",
+  "dependencies": {}
+}
