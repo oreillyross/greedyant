@@ -9,5 +9,7 @@
     "graphql"
   ],
   "main": "/index.html",
-  "dependencies": {}
+  "dependencies": {
+    
+  }
 }
