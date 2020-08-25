@@ -1,4 +1,8 @@
 .container {
-    height: 80vmin;
-    background: var(--contrast);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 12px;
+  height: 80vmin;
+  background: var(--contrast);
+  padding: 24px;
 }
