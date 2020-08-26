@@ -1,0 +1,6 @@
+.ContentBox {
+  
+  max-width: 240px;
+  max-height: 240px;
+  border: 1px solid black;
+}

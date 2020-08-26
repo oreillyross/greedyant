@@ -6,8 +6,16 @@ import Container from './components/Container';
 export default function App() {
   return (
     <div>
-      <Header/>
+      <Header />
+
+
+      <Container />
+      <Footer/>
+
       <Container/>
+
+
+
 
     </div>
   );
