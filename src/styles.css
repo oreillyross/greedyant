@@ -4,10 +4,11 @@
   --lightAccent: #bcbcab;
   --contrast: #abbcb3;
   --white: white;
+  --lightContrast: lighten(#ABBCB3, 50%)
 }
 
 body {
-  max-width: 80%;
+  max-width: 95%;
   margin: 0 auto;
   background: var(--main);
 }
