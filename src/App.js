@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Container from "./components/Container";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
 
       <Container />
+      <Footer/>
     </div>
   );
 }
