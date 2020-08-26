@@ -1,4 +1,10 @@
 .container {
-    height: 80vmin;
-    background: var(--contrast);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-gap: 12px;
+  height: 80vmin;
+  background: var(--contrast);
+  padding: 24px;
 }
+
