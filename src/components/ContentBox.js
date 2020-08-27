@@ -3,8 +3,8 @@ import styles from "./ContentBox.module.css";
 
 export default function ContentBox(props) {
   return (
-    <div className={styles.ContentBox}>
-      
+    <div data-testid='content-box' className={styles.ContentBox}>
+     {props.content.name} 
     </div>
   );
 }

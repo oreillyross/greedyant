@@ -6,10 +6,12 @@ import ContentBox from "./ContentBox";
 import AddBox from './AddBox'
 
 // (array[{}]?) => AddBox ? ContentBox[]
-export default function Container({content}) {
+export default function Container({contents}) {
   return (
     <div className={styles.container}>
-     {(!content) ? <AddBox/> : null}
+     {(!contents) ? <AddBox/> : contents.map(c => {
+       return <ContentBox key={c.name} content={c}/>
+     })}
     </div>
   );
 }
