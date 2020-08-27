@@ -1,6 +1,7 @@
 import React from 'react'
 import Container from './Container'
 import { render, screen } from '@testing-library/react'
+import '@testing-library/jest-dom'
 
 const demoData = [{ name: "Bob" }, { name: "Jimmy" }, { name: "Jones" }];
 
@@ -10,7 +11,8 @@ it('renders a Container', () => {
 })
 it('renders AddBox if no array passed', () => {
 render(<Container/>)
-screen.getByAltText('add item', {exact: true})
+const addBox = screen.getByAltText('add item', {exact: true})
+expect(addBox).toBeInTheDocument()
 
 })
 })
