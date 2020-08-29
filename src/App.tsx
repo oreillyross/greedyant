@@ -8,7 +8,7 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Container content={[]} />
+      <Container contents={{}} />
       <Footer/>
     </div>
   );
