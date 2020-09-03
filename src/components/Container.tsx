@@ -6,9 +6,9 @@ import ContentBox from "./ContentBox";
 import AddBox from './AddBox'
 
 type ContentProps = {
-  content: {
+  content?: {
     name: string
-  }
+  }[]
 }
 
 // (array[{}]?) => AddBox ? ContentBox[]

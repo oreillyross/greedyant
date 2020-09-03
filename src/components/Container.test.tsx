@@ -8,7 +8,7 @@ const demoData = [{ name: "Bob" }, { name: "Jimmy" }, { name: "Jones" }];
 
 describe('Container', () => {
 it('renders a Container', () => {
-  render(<Container/>);
+  render(<Container content={[{name: 'bob'}]}/>);
 })
 it('renders AddBox if no array passed', () => {
 render(<Container/>)
