@@ -1,16 +1,18 @@
 import React from "react";
 import styles from "./Container.module.css";
-import ContentBox from "./ContentBox";
 import AddBox from './AddBox'
 
-
+type ContentProps = {
+  content?: {
+    name: string
+  }[]
+}
 
 // (array[{}]?) => AddBox ? ContentBox[]
-export default function Container({content}) {
-  console.log(content.length)
+export default function Container({content}: ContentProps) {
   return (
     <div className={styles.container}>
-     {(content.length === 0) ? <AddBox/> : null}
+     {(!content) ? <AddBox/> : null}
     </div>
   );
 }
