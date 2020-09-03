@@ -19,6 +19,8 @@ module.exports = {
         "react"
     ],
     "rules": {
-        "linebreak-style": ["error", "windows"]
+        "linebreak-style": ["error", "windows"],
+        "import/prefer-default-export": "off",
+        "prettier/prettier": ["error", { "singleQuote": true }]
     }
 };
