@@ -5,7 +5,7 @@ const idOne = uuidv4();
 const idTwo = uuidv4()
 
 const users = {
-    [idOne]: { id: idOne, 
+    1: { id: idOne, 
                firstName: 'Bob', 
                lastName: 'Jones', 
                isDeveloper: false},
@@ -24,6 +24,19 @@ const getUsers = () => {
     })
 }
 
+const getUser = (id) => {
+    return new Promise((resolve, reject) => {
+        const user = users[id]
+        if (!user) {
+            return setTimeout(() => reject(new Error('No user found')),250) 
+        }
+        setTimeout(() => resolve(users[id]), 250)
+    })
+}
+
+
+// Implementation
+
 const doGetUsers = async () => {
     try {
        const result = await getUsers()
@@ -33,7 +46,18 @@ const doGetUsers = async () => {
     }
 };
 
-doGetUsers()
+//doGetUsers()
+
+const doGetUser = async (id) => {
+  try {
+    const user = await getUser(id)
+    console.log(user)
+  } catch (error) {
+      console.log(error)
+  }
+}
+
+doGetUser('1')
 
 
 
