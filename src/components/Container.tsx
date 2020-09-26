@@ -10,9 +10,11 @@ type ContentProps = {
 
 // (array[{}]?) => AddBox ? ContentBox[]
 export default function Container({content}: ContentProps) {
+  
   return (
     <div className={styles.container}>
      {(!content) ? <AddBox/> : null}
     </div>
   );
+  
 }
