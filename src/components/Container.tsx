@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "./Container.module.css";
-import AddBox from './AddBox'
+import { IngredientCard } from './IngredientCard'
 
 type ContentProps = {
   content?: {
@@ -12,9 +11,7 @@ type ContentProps = {
 export default function Container({content}: ContentProps) {
   
   return (
-    <div className={styles.container}>
-     {(!content) ? <AddBox/> : null}
-    </div>
+    <IngredientCard/>
   );
   
 }
