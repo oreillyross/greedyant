@@ -4,7 +4,9 @@
   --lightAccent: #bcbcab;
   --contrast: #abbcb3;
   --white: white;
-  --lightContrast: lighten(#ABBCB3, 50%)
+  --lightContrast: lighten(#ABBCB3, 50%);
+  box-sizing: border-box;
+
 }
 
 body {
