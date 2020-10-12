@@ -14,7 +14,7 @@ const Container = styled.div`
   gap: 3px;
 `
 
-function IngredientCard() {
+function IngredientCards() {
     return (
         <Container>
             
@@ -51,4 +51,4 @@ function IngredientCard() {
     )
 }
 
-export { IngredientCard }
+export { IngredientCards  }

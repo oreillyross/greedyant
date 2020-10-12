@@ -1,5 +1,5 @@
 import React from "react";
-import { IngredientCard } from './IngredientCard'
+import { IngredientCards } from './IngredientCards'
 
 type ContentProps = {
   content?: {
@@ -11,7 +11,7 @@ type ContentProps = {
 export default function Container({content}: ContentProps) {
   
   return (
-    <IngredientCard/>
+    <IngredientCards/>
   );
   
 }
