@@ -15,14 +15,12 @@ const Container = styled.div`
 
 
 
-function PictureChooser(list: any[]) {
+function PictureChooser() {
   return (
       <Container>
           <label htmlFor='filter'>Filter: </label>
           <input type='text' name='filter' id='filter' placeholder='type to filter list'/>
-          {list.map(item => (
-              <div>item.name</div>
-          ))}
+          
       </Container>
   )
 }

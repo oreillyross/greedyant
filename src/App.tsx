@@ -28,7 +28,7 @@ export default function App() {
   return (
     <div>
      
-     <PictureChooser list={list}/>
+     <PictureChooser />
         
      
     </div>
