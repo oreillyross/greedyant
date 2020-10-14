@@ -1,12 +1,34 @@
 import React from "react";
-import Container from "./components/Container";
-import { Footer } from './components/Footer';
+import { PictureChooser } from "./components/PictureChooser";
+
+
+
+const list = [
+  {
+   imgUrl: './pic.jpg',
+   name: 'A name of an ingredient'      
+  },
+  {
+      imgUrl: './pic.jpg',
+      name: 'A name of an ingredient'      
+     },
+     {
+      imgUrl: './pic.jpg',
+      name: 'A name of an ingredient'      
+     },
+     {
+      imgUrl: './pic.jpg',
+      name: 'A name of an ingredient'      
+     },
+]
+
+
 
 export default function App() {
   return (
     <div>
      
-        <Container/>
+     <PictureChooser list={list}/>
         
      
     </div>
