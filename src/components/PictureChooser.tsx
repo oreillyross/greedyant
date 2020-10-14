@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 // takes an array of objects which have a url property to an 
 //image file, and a name key value pair 
@@ -8,31 +9,21 @@ import React from 'react';
 
 // demo data
 
-const list = [
-    {
-     imgUrl: './pic.jpg',
-     name: 'A name of an ingredient'      
-    },
-    {
-        imgUrl: './pic.jpg',
-        name: 'A name of an ingredient'      
-       },
-       {
-        imgUrl: './pic.jpg',
-        name: 'A name of an ingredient'      
-       },
-       {
-        imgUrl: './pic.jpg',
-        name: 'A name of an ingredient'      
-       },
-]
+const Container = styled.div`
+  padding: 12px;
+`
 
-function PictureChooser() {
+
+
+function PictureChooser(list: any[]) {
   return (
-      <div>
-          <input type='text' name='filter' id='filter'/>
-
-      </div>
+      <Container>
+          <label htmlFor='filter'>Filter: </label>
+          <input type='text' name='filter' id='filter' placeholder='type to filter list'/>
+          {list.map(item => (
+              <div>item.name</div>
+          ))}
+      </Container>
   )
 }
 
