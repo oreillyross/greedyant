@@ -1,6 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
+const Picture = () => {
+  
+   React.useEffect(() => {
+     console.log('inside use effect')
+     return () => console.log('cleaning up')
+   }, [])
+
+  return (<div>Some value</div>)
+
+}
+
 // takes an array of objects which have a url property to an 
 //image file, and a name key value pair 
 // displays a search bar above to filter list
@@ -11,8 +23,14 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   padding: 12px;
+  input {
+    padding: 6px;
+  }
 `
 
+const pic = {
+  url: ''
+}
 
 
 function PictureChooser() {
