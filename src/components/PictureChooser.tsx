@@ -2,14 +2,27 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const Picture = () => {
-  
-   React.useEffect(() => {
-     console.log('inside use effect')
-     return () => console.log('cleaning up')
-   }, [])
+type Props = {
+  picture: {
+    title: string,
+    url: string
+  }
+}
 
-  return (<div>Some value</div>)
+const Picture = ({picture}: Props) => {
+  
+  
+  return (
+  
+
+  <div>
+    
+    {picture.title}
+    {/* This is needed for styled components image url */}
+    {picture.url}
+  
+  </div>
+  )
 
 }
 
@@ -29,16 +42,16 @@ const Container = styled.div`
 `
 
 const pic = {
-  url: ''
+  url: 'https://res.cloudinary.com/pantler/image/upload/v1556653536/dill-2500-56a20f953df78cf772718536_yynylc.jpg',
+  title: 'Dill'
 }
-
 
 function PictureChooser() {
   return (
       <Container>
           <label htmlFor='filter'>Filter: </label>
           <input type='text' name='filter' id='filter' placeholder='type to filter list'/>
-          
+          <Picture picture={pic}/>
       </Container>
   )
 }
