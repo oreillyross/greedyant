@@ -1,30 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Picture } from './Picture';
 
-
-type Props = {
-  picture: {
-    title: string,
-    url: string
-  }
-}
-
-const Picture = ({picture}: Props) => {
-  
-  
-  return (
-  
-
-  <div>
-    
-    {picture.title}
-    {/* This is needed for styled components image url */}
-    {picture.url}
-  
-  </div>
-  )
-
-}
 
 // takes an array of objects which have a url property to an 
 //image file, and a name key value pair 
