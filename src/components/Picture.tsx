@@ -14,8 +14,7 @@ const StyledImage = styled.div`
 `
 
 export const Picture = ({ picture }: Props) => {
-
-
+  
   return (
 
 
