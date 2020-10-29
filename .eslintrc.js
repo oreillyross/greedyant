@@ -16,11 +16,13 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "react"
+        "react",
+        "prettier"
     ],
     "rules": {
         "linebreak-style": ["error", "windows"],
         "import/prefer-default-export": "off",
-        "prettier/prettier": ["error", { "singleQuote": true }]
+        "prettier/prettier": ["error", { "singleQuote": true }],
+        "no-console": warn,
     }
 };
