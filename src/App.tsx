@@ -1,4 +1,5 @@
 import React from "react";
+import { IngredientList } from "./components/IngredientsList";
 import { PictureChooser } from "./components/PictureChooser";
 
 
@@ -28,8 +29,8 @@ export default function App() {
   return (
     <div>
      
-     <PictureChooser />
-        
+    
+        <IngredientList/>
      
     </div>
   ); 
