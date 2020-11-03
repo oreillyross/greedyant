@@ -1,4 +1,22 @@
 {
 
+  "ingredients": [
+      {"name": "Pepper",
+       "quantity": 4,
+       "measurement": "g",
+       "expiryDate": "3453335"
+    },
+    {"name": "Peas",
+        "quantity": 450,
+        "measurement": "gm",
+        "expiryDate": "3456645"
+     },
+     {"name": "Potatoes",
+        "quantity": 2,
+        "measurement": "kg",
+        "expiryDate": "3453665"
+     }
+  ]
+
     
 }
