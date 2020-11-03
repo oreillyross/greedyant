@@ -11,11 +11,11 @@ const Outline = styled.div`
 `;
 
 const StyledTable = styled.table`
-   width: 100%;
-   & > tr {
-     background: red;
-   }
-`
+  width: 100%;
+  & > tbody, thead {
+    background: red;
+  }
+`;
 
 interface Ingredient {
   quantity: number;
@@ -30,23 +30,27 @@ const List = () => {
   return (
     <Outline>
       <StyledTable>
-        <tr>
-          <th>Quantity</th>
-          <th>Measurement</th>
-          <th>Name</th>
-          <th>Expiry date</th>
-        </tr>
-        {data.ingredients.map((ingredient) => {
-          return (
-            <tr>
-              <td>{ingredient.quantity}</td>
+        <thead>
+          <tr>
+            <th>Quantity</th>
+            <th>Measurement</th>
+            <th>Name</th>
+            <th>Expiry date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.ingredients.map((ingredient) => {
+            return (
+              <tr key={ingredient.name}>
+                <td>{ingredient.quantity}</td>
 
-              <td>{ingredient.measurement}</td>
-              <td>{ingredient.name}</td>
-              <td>{ingredient.expiryDate}</td>
-            </tr>
-          );
-        })}
+                <td>{ingredient.measurement}</td>
+                <td>{ingredient.name}</td>
+                <td>{ingredient.expiryDate}</td>
+              </tr>
+            );
+          })}
+        </tbody>
       </StyledTable>
     </Outline>
   );
