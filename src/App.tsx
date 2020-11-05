@@ -6,6 +6,7 @@ import { IngredientForm } from "./components/IngredientForm";
 import { Header } from "./components/Header";
 import styled from "styled-components";
 import { Footer } from "./components/Footer";
+import { IngredientDisplay } from "./components/IngredientDisplay";
 
 const StyledApp = styled.div`
   padding: 12px;
@@ -19,9 +20,11 @@ export default function App() {
       <StyledApp>
         <Logo /> <Header />
       </StyledApp>
-      <IngredientList />
+      {/* <IngredientList />
       <IngredientForm />
-      <Footer/>
+      <Footer/> */}
+      <IngredientDisplay/>
+
     </>
   );
 }
