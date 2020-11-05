@@ -14,6 +14,7 @@ const StyledDisplay = styled.div`
   background-image: url('https://res.cloudinary.com/pantler/image/upload/c_scale,w_384/v1556653564/1200px-Bright_red_tomato_and_cross_section02_u8hklz.jpg');
   background-repeat: no-repeat;
   background-size: contain;
+  border-radius: 20px;
 `
 
 const IngredientDisplay = () => {
