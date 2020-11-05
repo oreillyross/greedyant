@@ -1,3 +1,13 @@
+/* Using the color scheme from colorhunt 
+- https://colorhunt.co/palette/213056 */
+:root {
+  --primary-font-color: #bedbbb;
+  --secondary-font-color: #8db596;
+  --primary-background-color: rgba(255,255,255,0.8);
+  --secondary-bg: rgba(0, 0, 0, 0.8);
+
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,12 +16,12 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-background-color);
 }
 
-
-input, label {
+input,
+label {
   display: block;
   width: 80%;
 }
-

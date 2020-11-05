@@ -21,7 +21,15 @@ const StyledApp = styled.div`
   justify-items: center;
   color: #bedbbb;
   background-color: #92817a;
+  line-height: 1.3
 `;
+
+const StyledBody = styled.section`
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;  
+`
 
 export default function App() {
   return (
@@ -33,7 +41,9 @@ export default function App() {
       {/* <IngredientList />
       <IngredientForm />
       <Footer/> */}
+      <StyledBody>
       <IngredientDisplay />
+      </StyledBody>
     </>
   );
 }
