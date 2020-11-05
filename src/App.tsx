@@ -8,10 +8,19 @@ import styled from "styled-components";
 import { Footer } from "./components/Footer";
 import { IngredientDisplay } from "./components/IngredientDisplay";
 
+const StyledStrap = styled.div`
+  font-size: 16px;
+  color: white;
+`;
+
 const StyledApp = styled.div`
   padding: 12px;
-  display: grid;
-  grid-template-columns: 250px 1fr;
+  display: flex;
+  border: 1px solid black;
+  align-items: center;
+  justify-items: center;
+  color: #bedbbb;
+  background-color: #92817a;
 `;
 
 export default function App() {
@@ -19,12 +28,12 @@ export default function App() {
     <>
       <StyledApp>
         <Logo /> <Header />
+        <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
       </StyledApp>
       {/* <IngredientList />
       <IngredientForm />
       <Footer/> */}
-      <IngredientDisplay/>
-
+      <IngredientDisplay />
     </>
   );
 }

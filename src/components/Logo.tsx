@@ -3,7 +3,8 @@ import styled from "styled-components";
 
 const StyledLogo = styled.div`
   margin: 24px;
-  background-color: seagreen;
+  background-color: #8db596;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 68px;
   font-weight: bold;
   border-radius: 15px;
