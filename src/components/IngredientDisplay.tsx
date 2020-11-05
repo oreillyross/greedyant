@@ -6,6 +6,7 @@ import styled from 'styled-components'
 // url placement size repeat o clip attachment
 const StyledDisplay = styled.div`
   margin: 24px;
+  font-size: 16px;
   padding: 16px;
   width: 400px;
   height: 400px;
