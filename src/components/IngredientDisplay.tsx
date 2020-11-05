@@ -15,6 +15,7 @@ const StyledDisplay = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 20px;
+  
 `
 
 const IngredientDisplay = () => {
