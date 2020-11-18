@@ -17,17 +17,19 @@ const StyledDisplay = styled.div`
   border-radius: 20px;
 `;
 
+const StyledContainer = styled.div`
+  border: 1px solid seagreen;
+  
+`
+
+
 const StyledName = styled.div`
   position: absolute;
   top: 25px;
 `;
 
 const IngredientDisplay = () => {
-  return (
-    <StyledDisplay>
-      <StyledName>Tomatoes</StyledName>
-    </StyledDisplay>
-  );
+  return <StyledContainer>This is where the block goes,with the ingredient information</StyledContainer>;
 };
 
 export { IngredientDisplay };
