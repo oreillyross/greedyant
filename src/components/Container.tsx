@@ -13,5 +13,5 @@ export default function Container({content}: ContentProps) {
   return (
     <IngredientCards/>
   );
-  
+
 }
