@@ -2,10 +2,11 @@
 
 import axios from 'axios'
 
-var options = {
-  method: 'GET',
+console.log(process.env.RAPIDAPI_URL)
+
+const options = {
   url: process.env.RAPIDAPI_URL,
-  params: {query: 'potatoes', number: '10', intolerances: 'egg'},
+  params: {query: 'potatoes', number: '10'},
   headers: {
     'x-rapidapi-key': process.env.RAPIDAPI_KEY,
     'x-rapidapi-host': process.env.RAPIDAPI_HOST
