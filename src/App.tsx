@@ -7,6 +7,10 @@ import { Header } from "./components/Header";
 import styled from "styled-components";
 import { Footer } from "./components/Footer";
 import { IngredientDisplay } from "./components/IngredientDisplay";
+import { options } from "./datasources/spoonacular-api";
+
+
+const myoptions = options
 
 const StyledStrap = styled.div`
   font-size: 16px;
