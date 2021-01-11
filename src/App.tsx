@@ -1,17 +1,23 @@
 import React from "react";
-
 import Header from "./components/Header";
-import Container from "./components/Container";
 import Footer from "./components/Footer";
-
-const demoData = [{ name: "Bob" }, { name: "Jimmy" }, { name: "Jones" }];
-
+import { BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import { About, Home, Recipe, NotFound } from "./pages";
 export default function App() {
   return (
     <div>
-      <Header />
-      <Container />
-      <Footer/>
+      <Router>
+        <Header />
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/recipe" element={<Recipe />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+      <Footer />
     </div>
   );
 }
