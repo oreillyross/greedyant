@@ -13,7 +13,7 @@ export default function App() {
       <Header />
       <SearchBox/>
       <Container content={demoData} />
-      <Footer/>
+      <Footer/> 
     </div>
   );
 }
