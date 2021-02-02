@@ -29,7 +29,9 @@ const StyledName = styled.div`
 `;
 
 const IngredientDisplay = () => {
-  return <StyledContainer>This is where the block goes,with the ingredient information</StyledContainer>;
+  return (
+    <h3>Show the ingredients</h3>
+  )
 };
 
 export { IngredientDisplay };

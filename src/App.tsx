@@ -42,12 +42,8 @@ export default function App() {
         <Logo /> <Header />
         <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
       </StyledApp>
-      {/* <IngredientList />
-      <IngredientForm />
-      <Footer/> */}
-      <StyledBody>
-      <IngredientDisplay />
-      </StyledBody>
+        <IngredientForm/>
+        <IngredientDisplay/>
     </>
   );
 }
