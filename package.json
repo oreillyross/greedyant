@@ -40,6 +40,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "local:test": "jest src/__tests__/2.js",
     "eject": "react-scripts eject"
   },
   "browserslist": [

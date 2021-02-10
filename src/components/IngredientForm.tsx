@@ -6,6 +6,13 @@ const StyledForm = styled.div`
   margin: 12px;
   padding: 12px;
   border: 1px solid grey;
+  button: {
+    display: block;
+    margin-top: 12px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 `;
 
 type IMeasurement = "g" | "gm" | "kg" | "litre" | null;
@@ -29,14 +36,14 @@ const IngredientForm = () => {
     expiryDate: new Date(),
   };
 
-const Button = styled.button`
-  display: block;
-  margin-top: 12px;
-  width: 50vw;
-  margin-left: auto;
-  margin-right: auto;
+// const Button = styled.button`
+//   display: block;
+//   margin-top: 12px;
+//   width: 50vw;
+//   margin-left: auto;
+//   margin-right: auto;
   
-`
+
 
   return (
     <StyledForm>
@@ -59,7 +66,7 @@ const Button = styled.button`
               <input type="text" />
               <label>Expiry Date</label>
               <input type="date" />
-              <Button type="submit">Add</Button>
+              <button type="submit">Add</button>
             </form>
           );
         }}

@@ -1,16 +1,11 @@
 import React from "react";
-import { IngredientList } from "./components/IngredientsList";
-import { PictureChooser } from "./components/PictureChooser";
 import { Logo } from "./components/Logo";
 import { IngredientForm } from "./components/IngredientForm";
 import { Header } from "./components/Header";
 import styled from "styled-components";
-import { Footer } from "./components/Footer";
 import { IngredientDisplay } from "./components/IngredientDisplay";
-import { options } from "./datasources/spoonacular-api";
 
 
-const myoptions = options
 
 const StyledStrap = styled.div`
   font-size: 16px;
@@ -25,7 +20,7 @@ const StyledApp = styled.div`
   justify-items: center;
   color: #bedbbb;
   background-color: #92817a;
-  line-height: 1.3
+  line-height: 1.3;
 `;
 
 const StyledBody = styled.section`
@@ -43,7 +38,7 @@ export default function App() {
         <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
       </StyledApp>
         <IngredientForm/>
-        <IngredientDisplay/>
+        <IngredientDisplay ingredients={[]}/>
     </>
   );
 }

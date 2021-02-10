@@ -1,0 +1,32 @@
+{
+
+    "ingredientsfromPantry": [
+
+      {
+          "id": "1234",
+          "name": "Potato",
+          "expiry": "20220301"
+       
+    },
+    {
+        "id": "134234",
+        "name": "Tomato",
+        "expiry": "20220401"
+     
+  },
+  {
+    "id": "12457634",
+    "name": "Pepper",
+    "expiry": "20220312"
+ 
+},
+{
+    "id": "12656734",
+    "name": "Chicken Schnitzel",
+    "expiry": "20220101"
+ 
+}
+
+
+    ]
+}

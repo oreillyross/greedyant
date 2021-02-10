@@ -28,10 +28,24 @@ const StyledName = styled.div`
   top: 25px;
 `;
 
-const IngredientDisplay = () => {
+interface Ingredient {
+  name: string;
+  quantity: number;
+  image: string;
+}
+interface IIngredientProps {
+  ingredients?: Array<Ingredient>
+ 
+}
+
+function IngredientDisplay({ ingredients }: IIngredientProps) {
   return (
-    <h3>Show the ingredients</h3>
-  )
-};
+    <>
+      <h3>Show the ingredients</h3>
+
+
+    </>
+  );
+}
 
 export { IngredientDisplay };
