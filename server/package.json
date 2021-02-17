@@ -1,0 +1,8 @@
+{
+  "name": "greedyAnt_server",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Ross O'Reilly",
+  "license": "MIT",
+  "private": false
+}
