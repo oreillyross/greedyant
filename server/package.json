@@ -1,8 +1,12 @@
 {
-  "name": "greedyAnt_server",
+  "name": "greedyantserver",
   "version": "0.0.1",
   "main": "index.js",
   "author": "Ross O'Reilly",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "apollo-server": "^2.21.0",
+    "graphql": "^15.5.0"
+  }
 }
