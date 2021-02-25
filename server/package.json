@@ -8,5 +8,18 @@
   "dependencies": {
     "apollo-server": "^2.21.0",
     "graphql": "^15.5.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "yarn build --watch --preserveWatchOutput",
+    "lint": "eslint src --ext js,ts",
+    "test": "jest"
+  },
+  "volta": {
+    "node": "14.16.0",
+    "yarn": "1.22.10"
+  },
+  "devDependencies": {
+    "typescript": "^4.2.2"
   }
 }
