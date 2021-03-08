@@ -6,8 +6,13 @@ import styled from "styled-components";
 import { IngredientDisplay } from "./components/IngredientDisplay";
 import { ApolloClient, InMemoryCache } from "@apollo/client";
 
+
+//TODO pass this in as an environment variable
+const endpoint = 'http://localhost:4000'
+
 const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
+  uri: endpoint
 });
 
 const StyledStrap = styled.div`
