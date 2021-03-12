@@ -4,12 +4,13 @@ import { IngredientForm } from "./components/IngredientForm";
 import { Header } from "./components/Header";
 import styled from "styled-components";
 import { IngredientDisplay } from "./components/IngredientDisplay";
-import { ApolloClient, InMemoryCache } from "@apollo/client";
+import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
+const uri = "http://localhost:4000"
 
 const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
-
+  uri,
 });
 
 const StyledStrap = styled.div`
@@ -38,12 +39,14 @@ const StyledBody = styled.section`
 export default function App() {
   return (
     <>
-      <StyledApp>
-        <Logo /> <Header />
-        <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
-      </StyledApp>
-      <IngredientForm />
-      <IngredientDisplay ingredients={[]} />
+      <ApolloProvider client={apolloClient}>
+        <StyledApp>
+          <Logo /> <Header />
+          <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
+        </StyledApp>
+        <IngredientForm />
+        <IngredientDisplay ingredients={[]} />
+      </ApolloProvider>
     </>
   );
 }
