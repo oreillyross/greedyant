@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import styled from "styled-components";
 import { IngredientDisplay } from "./components/IngredientDisplay";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
+import {Navbar} from "./components/Navbar"
 
 const uri = "http://localhost:4000"
 
@@ -44,7 +45,9 @@ export default function App() {
           <Logo /> <Header />
           <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
         </StyledApp>
+        <Navbar/>
         <IngredientForm />
+
         <IngredientDisplay ingredients={[]} />
       </ApolloProvider>
     </>
