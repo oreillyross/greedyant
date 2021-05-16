@@ -5,9 +5,10 @@ import { Header } from "./components/Header";
 import styled from "styled-components";
 import { IngredientDisplay } from "./components/IngredientDisplay";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import {Navbar} from "./components/Navbar"
+import { Navbar } from "./components/Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-const uri = "http://localhost:4000"
+const uri = "http://localhost:4000";
 
 const apolloClient = new ApolloClient({
   cache: new InMemoryCache(),
@@ -41,14 +42,18 @@ export default function App() {
   return (
     <>
       <ApolloProvider client={apolloClient}>
-        <StyledApp>
-          <Logo /> <Header />
-          <StyledStrap>The app that makes cooking what you got in the pantry a breeze.</StyledStrap>
-        </StyledApp>
-        <Navbar/>
-        <IngredientForm />
-
-        <IngredientDisplay ingredients={[]} />
+        <Router>
+          <StyledApp>
+            <Logo /> <Header />
+            <StyledStrap>
+              The app that makes cooking what you got in the pantry a breeze.
+            </StyledStrap>
+          </StyledApp>
+          <Navbar />
+          <Route path="/ingredients">
+            <IngredientDisplay />
+          </Route>
+        </Router>
       </ApolloProvider>
     </>
   );
