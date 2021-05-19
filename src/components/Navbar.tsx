@@ -8,15 +8,17 @@ export function Navbar() {
       <Burger opened={false} />
 
       <section className="navbar">
-        <ul role="list">
-        <li role="listitem">
+        <ul>
+          <li>
             <Link to="/home">Home</Link>
           </li>{" "}
-          <li role="listitem">
+          <li>
             <Link to="/recipes">Recipes</Link>
           </li>{" "}
-          <Link to="/ingredients"><li role="listitem">Ingredients</li></Link>
-          <li role="listitem">Login/manage</li>
+          <Link to="/ingredients">
+            <li>Ingredients</li>
+          </Link>
+          <li>Login/manage</li>
         </ul>
       </section>
     </div>
