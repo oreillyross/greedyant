@@ -1,12 +1,12 @@
 import React from "react";
 import { Logo } from "./components/Logo";
-import { IngredientForm } from "./components/IngredientForm";
 import { Header } from "./components/Header";
 import styled from "styled-components";
 import { IngredientDisplay } from "./components/IngredientDisplay";
+import {RecipeDisplay} from "./components/RecipeDisplay"
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { Navbar } from "./components/Navbar";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const uri = "http://localhost:4000";
 
@@ -52,6 +52,9 @@ export default function App() {
           <Navbar />
           <Route path="/ingredients">
             <IngredientDisplay />
+          </Route>
+          <Route path="/recipes">
+            <RecipeDisplay />
           </Route>
         </Router>
       </ApolloProvider>
