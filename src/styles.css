@@ -1,3 +1,9 @@
+
+
+
+
+
+
 /* Using the color scheme from colorhunt 
 - https://colorhunt.co/palette/213056 */
 :root {
@@ -39,4 +45,6 @@ section ul li {
   padding-left: .5rem;
 }
 
-
+h3 {
+  padding: 1rem;
+}
