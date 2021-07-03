@@ -43,9 +43,9 @@ function IngredientDisplay({ ingredients }: IIngredientProps) {
       <h3>Show the ingredients</h3>
       {/* This is the main display using flex to show all the ingredients as 
            cards */}
-      <section>{ingredients.map(ingredient => (
-        <div key={ingredient.id}>{ingredient.name}</div>
-      ))}</section>
+      <section><ol>{ingredients.map(ingredient => (
+        <li data-testid="ing" key={ingredient.id}>{ingredient.name}</li>
+      ))}</ol></section>
     </>
   );
 }
