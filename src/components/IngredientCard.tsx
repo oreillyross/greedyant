@@ -5,10 +5,10 @@ type Props = {
 	ingredient: IIngredient;
 }
 
-function IngredientCard<Props>(props: Props ) {
- const {ingredient} = props 
+function IngredientCard(props: Props ) {
+	const { ingredient } = props
 	return (
-	  <div>{ingredient.name}</div>
+	  <div>{props.ingredient.name}</div>
   )
 }
  
