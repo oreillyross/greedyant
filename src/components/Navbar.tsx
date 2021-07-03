@@ -1,5 +1,5 @@
 import React from "react";
-import { Burger, ElementsGroup, Badge } from "@mantine/core";
+import { Burger } from "@mantine/core";
 import { Link } from "react-router-dom";
 
 export function Navbar() {

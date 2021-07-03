@@ -23,14 +23,14 @@ type Props = {
 };
 
 export function Recipe({ recipe }: Props) {
-  const { id, name, description, imagePath } = recipe;
+  const { name, description, imagePath } = recipe;
   return (
     <div className={recipeStyle}>
       <section>
         <header>
           <h3>{name}</h3>
         </header>
-        <img src={imagePath} width={300} height={300} />
+        <img alt="ingredient" src={imagePath} width={300} height={300} />
 
         <p>{description}</p>
       </section>
