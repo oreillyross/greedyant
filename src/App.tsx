@@ -3,10 +3,11 @@ import { Logo } from "./components/Logo";
 import { Header } from "./components/Header";
 import styled from "styled-components";
 import { IngredientDisplay } from "./components/IngredientDisplay";
-import {RecipeDisplay} from "./components/RecipeDisplay"
+import { RecipeDisplay } from "./components/RecipeDisplay";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import * as data from "./datasources/ingredients.json"
 
 const uri = "http://localhost:4000";
 
@@ -39,6 +40,8 @@ const StyledBody = styled.section`
 `;
 
 export default function App() {
+
+
   return (
     <>
       <ApolloProvider client={apolloClient}>
@@ -51,7 +54,7 @@ export default function App() {
           </StyledApp>
           <Navbar />
           <Route path="/ingredients">
-            <IngredientDisplay />
+            <IngredientDisplay ingredients={data.ingredientsfromPantry}/>
           </Route>
           <Route path="/recipes">
             <RecipeDisplay />

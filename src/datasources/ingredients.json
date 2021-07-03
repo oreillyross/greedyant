@@ -5,25 +5,35 @@
       {
           "id": "1234",
           "name": "Potato",
-          "expiry": "20220301"
+          "expiry": "20220301",
+          "quantity": 2,
+          "image": "potato"
        
     },
     {
         "id": "134234",
         "name": "Tomato",
-        "expiry": "20220401"
+        "expiry": "20220401",
+        "quantity": 2,
+        "image": "potato"
+
      
   },
   {
     "id": "12457634",
     "name": "Pepper",
-    "expiry": "20220312"
+    "expiry": "20220312",
+    "quantity": 2,
+    "image": "potato"
+
  
 },
 {
     "id": "12656734",
     "name": "Chicken Schnitzel",
-    "expiry": "20220101"
+    "expiry": "20220101",
+    "image": "schnitzel",
+    "quantity": 4  
  
 }
 

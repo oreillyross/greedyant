@@ -19,9 +19,7 @@ const StyledDisplay = styled.div`
 
 const StyledContainer = styled.div`
   border: 1px solid seagreen;
-  
-`
-
+`;
 
 const StyledName = styled.div`
   position: absolute;
@@ -29,21 +27,25 @@ const StyledName = styled.div`
 `;
 
 interface Ingredient {
+  id: string;
   name: string;
-  quantity: number;
-  image: string;
+  quantity?: number;
+  expiry: string;
+  image?: string;
 }
 interface IIngredientProps {
-  ingredients?: Array<Ingredient>
- 
+  ingredients: Array<Ingredient>;
 }
 
 function IngredientDisplay({ ingredients }: IIngredientProps) {
   return (
     <>
       <h3>Show the ingredients</h3>
-
-
+      {/* This is the main display using flex to show all the ingredients as 
+           cards */}
+      <section><ol>{ingredients.map(ingredient => (
+        <li data-testid="ing" key={ingredient.id}>{ingredient.name}</li>
+      ))}</ol></section>
     </>
   );
 }
