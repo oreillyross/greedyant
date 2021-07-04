@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles.css';
+import "./csshack.css"
 import * as dotenv from 'dotenv'
 import App from './App';
 

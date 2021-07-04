@@ -32,12 +32,7 @@ const StyledApp = styled.div`
   line-height: 1.3;
 `;
 
-const StyledBody = styled.section`
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+
 
 export default function App() {
 
