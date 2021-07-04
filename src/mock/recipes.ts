@@ -1,11 +1,11 @@
-type recipe = {
+type Recipe = {
   id: string;
   name: string;
   description: string;
   imagePath: string;
 };
 
-export const recipe: recipe = {
+export const recipe: Recipe = {
   id: "12345676",
   name: "Potato Salad",
   description:
